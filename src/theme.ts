@@ -18,7 +18,11 @@ const theme = {
         WebkitTapHighlightColor: 'rgba(0,0,0,0)',
         scrollBehavior: 'smooth'
       },
-      body: {}
+      body: {
+        fontSize: 'var(--normal-font-size)',
+        background: 'var(--body-color)',
+        color: 'var(--text-color)'
+      }
     }
   },
   fonts: {
