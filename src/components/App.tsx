@@ -6,6 +6,7 @@ export const App = () => {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <div className="App">
+      Lora
       <div>
         <Button
           onClick={toggleColorMode}

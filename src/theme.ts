@@ -10,14 +10,18 @@ const theme = {
   styles: {
     global: {
       html: {
+        fontFamily: `'Lora', serif`,
         height: '100%',
-        '-webkit-text-size-adjust': '100%',
-        '-ms-text-size-adjust': '100%',
-        '-ms-overflow-style': 'scrollbar',
-        '-webkit-tap-highlight-color': 'rgba(0,0,0,0)'
+        WebkitTextSizeAdjust: '100%',
+        MsTextSizeAdjust: '100%',
+        MsOverflowStyle: 'scrollbar',
+        WebkitTapHighlightColor: 'rgba(0,0,0,0)'
       },
       body: {}
     }
+  },
+  fonts: {
+    body: `'Lora', serif`
   }
 }
 
