@@ -1,4 +1,4 @@
-import { useColorMode } from '@chakra-ui/react'
+import { Heading, useColorMode } from '@chakra-ui/react'
 import { Button } from '@chakra-ui/react'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 
@@ -7,6 +7,7 @@ export const App = () => {
   return (
     <div className="App">
       Lora
+      <Heading>Roboto</Heading>
       <div>
         <Button
           onClick={toggleColorMode}

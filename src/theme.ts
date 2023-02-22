@@ -10,7 +10,7 @@ const theme = {
   styles: {
     global: {
       html: {
-        fontFamily: `'Lora', serif`,
+        fontFamily: `'Roboto', sans-serif`,
         height: '100%',
         WebkitTextSizeAdjust: '100%',
         MsTextSizeAdjust: '100%',
@@ -21,7 +21,8 @@ const theme = {
     }
   },
   fonts: {
-    body: `'Lora', serif`
+    body: `'Roboto', sans-serif`,
+    heading: `'Lora', serif`
   }
 }
 
