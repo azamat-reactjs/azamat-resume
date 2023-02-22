@@ -15,7 +15,8 @@ const theme = {
         WebkitTextSizeAdjust: '100%',
         MsTextSizeAdjust: '100%',
         MsOverflowStyle: 'scrollbar',
-        WebkitTapHighlightColor: 'rgba(0,0,0,0)'
+        WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+        scrollBehavior: 'smooth'
       },
       body: {}
     }
