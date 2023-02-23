@@ -6,7 +6,7 @@ export const ToggleColorMode = () => {
 
   return (
     <div className="ToggleColorMode">
-      <Button onClick={toggleColorMode} size="sm">
+      <Button onClick={toggleColorMode} size="sm" position="initial">
         {colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}
       </Button>
     </div>

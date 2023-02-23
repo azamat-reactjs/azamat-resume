@@ -1,12 +1,13 @@
-import { useState } from 'react'
+import { useAppDispatch } from '../../hooks/storeHooks'
+import { openMenu } from '../../store/slices/toggleMenu'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { Button } from '@chakra-ui/react'
 
 export const NavOpen = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const dispatch = useAppDispatch()
 
   const toggleMenu = () => {
-    setIsMenuOpen((prevState) => !prevState)
+    dispatch(openMenu(true))
   }
 
   return (
