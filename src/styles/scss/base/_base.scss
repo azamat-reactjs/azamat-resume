@@ -43,14 +43,16 @@ body.chakra-ui-dark {
   --container-color: hsl(207, 4%, 12%);
 }
 
-
 /* ==========
     Color changes in some parts of
     the website, in light theme
 ========== */
 
-
 /*=============== REUSABLE CSS CLASSES ===============*/
+#root {
+  height: 100%;
+}
+
 .container {
   max-width: 1024px;
   margin-inline: 1.5rem;
@@ -78,7 +80,7 @@ body.chakra-ui-dark {
 .section__title {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 .section__subtitle {
@@ -94,63 +96,43 @@ body.chakra-ui-dark {
 
 /* =============== HEADER & NAV =============== */
 
-
 /* Show menu */
-
 
 /* Active link */
 
-
 /* =============== HOME =============== */
-
 
 /* =============== SKILLS =============== */
 
-
 /* Animation skills */
-
 
 /* =============== QUALIFICATION =============== */
 
-
 /* =============== SERVICES =============== */
-
 
 /* =============== PROJECTS =============== */
 
-
 /* Swiper class */
-
 
 /* =============== TESTIMONIAL =============== */
 
-
 /* Swiper class */
-
 
 /* =============== CONTACT =============== */
 
-
 /* Status color */
-
 
 /* =============== FOOTER =============== */
 
-
 /* =============== SCROLL BAR =============== */
-
 
 /* =============== SCROLL UP =============== */
 
-
 /* Show Scroll Up*/
-
 
 /* =============== BREAKPOINTS =============== */
 /* For small devices */
 
-
 /* For medium devices */
-
 
 /* For large devices */

@@ -1,0 +1,25 @@
+.Header {
+  position: fixed;
+  width: 100%;
+  bottom: 2rem;
+  left: 0;
+  z-index: var(--z-fixed);
+
+  &__stack {
+    height: calc(var(--header-height) + 0.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--body-color);
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+    padding-inline: 1.5rem;
+    border-radius: 3rem;
+    width: 100%;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+  }
+}

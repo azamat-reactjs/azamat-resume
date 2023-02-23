@@ -2,7 +2,8 @@ import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
 
 const config: ThemeConfig = {
   initialColorMode: 'light',
-  useSystemColorMode: true
+  useSystemColorMode: true,
+  disableTransitionOnChange: false
 }
 
 const theme = {
@@ -21,7 +22,10 @@ const theme = {
       body: {
         fontSize: 'var(--normal-font-size)',
         background: 'var(--body-color)',
-        color: 'var(--text-color)'
+        color: 'var(--text-color)',
+        transitionProperty: 'all',
+        transitionDuration: 'normal',
+        height: '100%'
       }
     }
   },
