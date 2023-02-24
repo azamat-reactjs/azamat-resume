@@ -12,12 +12,7 @@ export const NavOpen = () => {
 
   return (
     <div className="NavOpen">
-      <Button
-        onClick={toggleMenu}
-        fontSize="1.25rem"
-        position="initial"
-        size="sm"
-      >
+      <Button onClick={toggleMenu} fontSize="1rem" position="initial" size="sm">
         <HamburgerIcon />
       </Button>
     </div>
