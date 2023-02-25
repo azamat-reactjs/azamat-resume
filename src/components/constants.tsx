@@ -8,16 +8,8 @@ import { ReactComponent as LinkedinBoxLine } from '../assets/svgs/linkedin-box-l
 import { ReactComponent as GitHubLine } from '../assets/svgs/github-line.svg'
 import { ReactComponent as TelegramLine } from '../assets/svgs/telegram-line.svg'
 import { ReactComponent as InstagramLine } from '../assets/svgs/instagram-line.svg'
-import { ReactComponent as HTML5Icon } from '../assets/svgs/html-5.svg'
-import { ReactComponent as CSS3Icon } from '../assets/svgs/css-3.svg'
-import { ReactComponent as JavaScriptIcon } from '../assets/svgs/javascript.svg'
-import { ReactComponent as GitIcon } from '../assets/svgs/git.svg'
-import { ReactComponent as ReactIcon } from '../assets/svgs/react.svg'
-import { ReactComponent as FigmaIcon } from '../assets/svgs/figma.svg'
-import { ReactComponent as SketchIcon } from '../assets/svgs/sketch.svg'
-import { ReactComponent as AdobeXDIcon } from '../assets/svgs/adobe-xd.svg'
-import { ReactComponent as InvisionIcon } from '../assets/svgs/invision.svg'
-import { ReactComponent as PhotoshopIcon } from '../assets/svgs/photoshop.svg'
+import NodeJsIcon from '../assets/svgs/nodejs-icon.svg'
+import NpmIcon from '../assets/svgs/npm.svg'
 
 export const links = [
   {
@@ -99,8 +91,14 @@ export const infos = [
     title: 'Contact',
     description: (
       <>
-        <a href="https://goo.gl/maps/GHR3EqwSebhxwZmL7" target="_blank">Uzbekistan, Tashkent</a> <br />
-        <a href="mailto:azamatreactjs@gmail.com">azamatreactjs@gmail.com</a> <br />
+        <a href="https://goo.gl/maps/GHR3EqwSebhxwZmL7" target="_blank">
+          Uzbekistan, Tashkent
+        </a>{' '}
+        <br />
+        <a href="mailto:azamatreactjs@gmail.com">
+          azamatreactjs@gmail.com
+        </a>{' '}
+        <br />
         <a href="tel:998950044048">+998 (95) 004-40-48</a> <br />
       </>
     )
@@ -140,78 +138,19 @@ export const infos2 = [
   }
 ]
 
-export const skills = [
-  {
-    id: 'html',
-    key: 'html',
-    icon: <HTML5Icon />,
-    name: 'HTML',
-    level: 'Intermediate'
-  },
-  {
-    id: 'css',
-    key: 'css',
-    icon: <CSS3Icon />,
-    name: 'CSS',
-    level: 'Intermediate'
-  },
-  {
-    id: 'js',
-    key: 'js',
-    icon: <JavaScriptIcon />,
-    name: 'JavaScript',
-    level: 'Intermediate'
-  },
-  {
-    id: 'git',
-    key: 'git',
-    icon: <GitIcon />,
-    name: 'Git',
-    level: 'Intermediate'
-  },
-  {
-    id: 'react',
-    key: 'react',
-    icon: <ReactIcon />,
-    name: 'React',
-    level: 'Intermediate'
-  }
-]
-
 export const skills2 = [
   {
-    id: 'figma',
-    key: 'figma',
-    icon: <FigmaIcon />,
-    name: 'Figma',
-    level: 'Intermediate'
-  },
-  {
-    id: 'sketch',
-    key: 'sketch',
-    icon: <SketchIcon />,
-    name: 'Sketch',
-    level: 'Intermediate'
-  },
-  {
-    id: 'adobexd',
-    key: 'adobexd',
-    icon: <AdobeXDIcon />,
-    name: 'Adobe XD',
-    level: 'Intermediate'
-  },
-  {
-    id: 'invision',
-    key: 'invision',
-    icon: <InvisionIcon />,
-    name: 'Invision',
+    id: 'nodejs',
+    key: 'nodejs',
+    image: <img src={NodeJsIcon} alt="Node.js" />,
+    name: 'Node.js',
     level: 'Basic'
   },
   {
-    id: 'photoshop',
-    key: 'photoshop',
-    icon: <PhotoshopIcon />,
-    name: 'Photoshop',
-    level: 'Intermediate'
+    id: 'npm',
+    key: 'npm',
+    image: <img src={NpmIcon} alt="NPM" />,
+    name: 'NPM',
+    level: 'Basic'
   }
 ]
