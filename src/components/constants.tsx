@@ -86,9 +86,9 @@ export const infos = [
       "Hi, I'm Azamat, Frontend Developer. Passionate about designing beautiful web interfaces. Based in Tashkent."
   },
   {
-    id: 'contact',
-    key: 'contact',
-    title: 'Contact',
+    id: 'contacts',
+    key: 'contacts',
+    title: 'Contacts',
     description: (
       <>
         <a href="https://goo.gl/maps/GHR3EqwSebhxwZmL7" target="_blank">
@@ -122,19 +122,19 @@ export const infos2 = [
     id: 'years',
     key: 'years',
     title: 'Years of experience',
-    number: '00+'
+    number: '01+'
   },
   {
     id: 'projects',
     key: 'projects',
     title: 'Completed projects',
-    number: '00+'
+    number: '01+'
   },
   {
     id: 'companies',
     key: 'companies',
     title: 'Companies worked',
-    number: '00+'
+    number: '01+'
   }
 ]
 
@@ -152,5 +152,25 @@ export const skills2 = [
     image: <img src={NpmIcon} alt="NPM" />,
     name: 'NPM',
     level: 'Basic'
+  }
+]
+
+export const qualificationInfos = [
+  {
+    id: 'collage',
+    key: 'collage',
+    name: 'Tashkent Professional College of Communication',
+    country: 'Tashkent - Collage',
+    year: '2011 - 2014'
+  }
+]
+
+export const qualificationInfos2 = [
+  {
+    id: 'frontend',
+    key: 'frontend',
+    name: 'Frontend Developer',
+    country: 'Davr Bank - Tashkent',
+    year: '2022 - Present'
   }
 ]

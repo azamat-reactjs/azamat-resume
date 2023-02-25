@@ -1,0 +1,57 @@
+.qualification {
+  position: relative;
+  &__container {
+    display: grid;
+    row-gap: 3.5rem;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 2rem;
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--title-color);
+    }
+  }
+
+  &__info {
+    display: grid;
+    row-gap: 2rem;
+  }
+
+  &__name {
+    font-size: var(--normal-font-size);
+    margin-bottom: 1.25rem;
+  }
+
+  &__country,
+  &__year {
+    display: block;
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+  }
+
+  &__country {
+    margin-bottom: 0.75rem;
+  }
+
+  &__shape-circle {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: -4rem;
+    bottom: 10rem;
+    transform: rotate(15deg);
+    opacity: 0.2;
+  }
+
+  &__shape-circle path {
+    fill: var(--text-color-light);
+  }
+}

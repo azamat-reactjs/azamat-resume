@@ -11,6 +11,8 @@ import NextJsDarkIcon from '../../assets/svgs/next-js-dark.svg'
 import TypescriptIcon from '../../assets/svgs/typescript.svg'
 import ReduxToolkitIcon from '../../assets/svgs/reduxtoolkit.svg'
 import AntDesignIcon from '../../assets/svgs/antdesign.svg'
+import ChakraUIIcon from '../../assets/svgs/chakraui.svg'
+import RoutertIcon from '../../assets/svgs/react-router.svg'
 import { skills2 } from '../constants'
 import { useColorMode } from '@chakra-ui/react'
 
@@ -53,6 +55,13 @@ export const Skills = () => {
       level: 'Intermediate'
     },
     {
+      id: 'router',
+      key: 'router',
+      image: <img src={RoutertIcon} alt="React Router" />,
+      name: 'React Router',
+      level: 'Intermediate'
+    },
+    {
       id: 'nextjs',
       key: 'nextjs',
       image: (
@@ -76,6 +85,13 @@ export const Skills = () => {
       key: 'reduxtoolkit',
       image: <img src={ReduxToolkitIcon} alt="Redux Toolkit" />,
       name: 'Redux Toolkit',
+      level: 'Intermediate'
+    },
+    {
+      id: 'chakra',
+      key: 'chakra',
+      image: <img src={ChakraUIIcon} alt="Chakra UI" />,
+      name: 'Chakra UI',
       level: 'Intermediate'
     },
     {
