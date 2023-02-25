@@ -4,6 +4,7 @@ import { openMenu } from '../../store/slices/toggleMenu'
 import { useAppDispatch, useAppSelector } from '../../hooks/storeHooks'
 import { Button, useColorMode } from '@chakra-ui/react'
 import { CloseIcon, HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
+import { Link as ScrollLink } from 'react-scroll'
 
 export const Header = () => {
   const dispatch = useAppDispatch()
@@ -29,13 +30,19 @@ export const Header = () => {
             {links.map((link) => {
               return (
                 <li className="nav__item" key={link.key}>
-                  <a
-                    className="nav__link"
+                  <ScrollLink
+                    to={`${link.key}`}
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    hashSpy={true}
                     href={`#${link.key}`}
+                    activeClass="active"
+                    className="nav__link"
                     onClick={() => toggleMenu(false)}
                   >
                     {link.icon} {link.label}
-                  </a>
+                  </ScrollLink>
                 </li>
               )
             })}

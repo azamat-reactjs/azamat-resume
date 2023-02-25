@@ -73,6 +73,12 @@
         fill: var(--title-color);
       }
     }
+    &.active {
+      color: var(--title-color);
+      svg {
+        fill: var(--title-color);
+      }
+    }
     svg {
       width: 1.25rem;
       height: 1.25rem;
