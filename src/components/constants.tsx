@@ -62,7 +62,7 @@ export const socials = [
   {
     id: 'linkedin',
     key: 'linkedin',
-    url: 'https://linkedin.com/azamatreactjs',
+    url: 'https://www.linkedin.com/in/azamatreactjs/',
     icon: <LinkedinBoxLine className="home__socials-icon" />
   },
   {
@@ -80,7 +80,7 @@ export const socials = [
   {
     id: 'instagram',
     key: 'instagram',
-    url: 'https://instagram/azamat_reactjs',
+    url: 'https://www.instagram.com/azamat_reactjs/',
     icon: <InstagramLine className="home__socials-icon" />
   }
 ]
