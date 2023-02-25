@@ -12,7 +12,6 @@ const theme = {
     global: {
       html: {
         fontFamily: `'Roboto', sans-serif`,
-        height: '100%',
         WebkitTextSizeAdjust: '100%',
         MsTextSizeAdjust: '100%',
         MsOverflowStyle: 'scrollbar',
@@ -24,8 +23,7 @@ const theme = {
         background: 'var(--body-color)',
         color: 'var(--text-color)',
         transitionProperty: 'all',
-        transitionDuration: 'normal',
-        height: '100%'
+        transitionDuration: 'normal'
       }
     }
   },

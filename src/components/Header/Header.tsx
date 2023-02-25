@@ -1,22 +1,71 @@
-import { Logo } from '../Logo'
-import { Navbar } from '../Navbar'
-import { ToggleColorMode } from '../ToggleColorMode'
-import { NavOpen } from '../NavOpen'
-import { Box, Container } from '@chakra-ui/react'
+import './Header.scss'
+import { links } from '../constants'
+import { openMenu } from '../../store/slices/toggleMenu'
+import { useAppDispatch, useAppSelector } from '../../hooks/storeHooks'
+import { Button, useColorMode } from '@chakra-ui/react'
+import { CloseIcon, HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 
 export const Header = () => {
+  const dispatch = useAppDispatch()
+  const { isMenuOpen } = useAppSelector((state) => state.toggleMenu)
+  const { colorMode, toggleColorMode } = useColorMode()
+
+  const toggleMenu = (param: boolean) => {
+    dispatch(openMenu(param))
+  }
+
   return (
-    <Box className="Header" as="header">
-      <Container maxW="container.xl">
-        <Box className="Header__stack">
-          <Logo />
-          <Navbar />
-          <Box className="Header__buttons">
-            <ToggleColorMode />
-            <NavOpen />
-          </Box>
-        </Box>
-      </Container>
-    </Box>
+    <header className="header" id="header">
+      <nav className="nav container">
+        <a className="nav__logo" href="#home">
+          Azamat
+        </a>
+
+        <div
+          className={`nav__menu ${isMenuOpen ? 'show-menu' : ''}`}
+          id="nav-menu"
+        >
+          <ul className="nav__list">
+            {links.map((link) => {
+              return (
+                <li className="nav__item" key={link.key}>
+                  <a
+                    className="nav__link"
+                    href={`#${link.key}`}
+                    onClick={() => toggleMenu(false)}
+                  >
+                    {link.icon} {link.label}
+                  </a>
+                </li>
+              )
+            })}
+          </ul>
+
+          <Button
+            className="nav__close"
+            onClick={() => toggleMenu(false)}
+            fontSize="0.75rem"
+            size="sm"
+            position="absolute"
+          >
+            <CloseIcon />
+          </Button>
+        </div>
+
+        <div className="nav__buttons">
+          <Button onClick={toggleColorMode} size="sm" position="initial" mr={2}>
+            {colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}
+          </Button>
+          <Button
+            onClick={() => toggleMenu(true)}
+            fontSize="1rem"
+            position="initial"
+            size="sm"
+          >
+            <HamburgerIcon />
+          </Button>
+        </div>
+      </nav>
+    </header>
   )
 }

@@ -1,9 +1,11 @@
-import { Box, Container } from '@chakra-ui/react'
+import { Home } from '../Home'
+import { Skills } from '../Skills'
 
 export const Main = () => {
   return (
-    <Box className="Main" w="100%">
-      <Container maxW="container.xl">MAIN</Container>
-    </Box>
+    <main className="main">
+      <Home />
+      <Skills />
+    </main>
   )
 }
