@@ -1,7 +1,8 @@
+import './Projects.scss'
 import { Section } from '../Section/Section'
 import { projects } from '../constants'
-
 import { ReactComponent as ArrowRightLine } from '../../assets/svgs/arrow-right-line.svg'
+import { Splide, SplideSlide } from '@splidejs/react-splide'
 
 export const Projects = () => {
   return (
@@ -13,28 +14,34 @@ export const Projects = () => {
     >
       <div className="container section__border">
         <div className="projects__container">
-          <div>
+          <Splide
+            options={{
+              width: 250
+            }}
+          >
             {projects.map((project) => {
               return (
-                <div className="projects__content" key={project.key}>
-                  {project.image}
-                  <div>
-                    <span className="projects__subtitle">
-                      {project.subtitle}
-                    </span>
-                    <h1 className="projects__title">{project.title}</h1>
-                    <a
-                      className="projects__button"
-                      href={project.projectUrl}
-                      target="_blank"
-                    >
-                      View demo <ArrowRightLine />
-                    </a>
+                <SplideSlide>
+                  <div className="projects__content" key={project.key}>
+                    {project.image}
+                    <div>
+                      <span className="projects__subtitle">
+                        {project.subtitle}
+                      </span>
+                      <h1 className="projects__title">{project.title}</h1>
+                      <a
+                        className="projects__button"
+                        href={project.projectUrl}
+                        target="_blank"
+                      >
+                        View demo <ArrowRightLine />
+                      </a>
+                    </div>
                   </div>
-                </div>
+                </SplideSlide>
               )
             })}
-          </div>
+          </Splide>
         </div>
       </div>
     </Section>

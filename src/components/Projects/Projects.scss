@@ -1,0 +1,47 @@
+.projects {
+  &__container {
+    overflow: initial;
+    display: grid;
+    justify-content: center;
+
+    .splide__pagination {
+      bottom: -1rem;
+    }
+  }
+
+  &__img {
+    width: 250px;
+    border-radius: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  &__subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+  }
+
+  &__title {
+    font-size: var(--h2-font-size);
+    margin: 0.5rem 0 1.25rem;
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+
+    svg {
+      width: 16px;
+      fill: var(--title-color);
+      transition: transform 0.3s;
+    }
+
+    &:hover {
+      svg {
+        transform: translateX(0.25rem);
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { App } from './components/App'
+import '@splidejs/react-splide/css'
 import './styles/scss/index.scss'
 
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
