@@ -2,7 +2,13 @@ import './Projects.scss'
 import { Section } from '../Section/Section'
 import { projects } from '../constants'
 import { ReactComponent as ArrowRightLine } from '../../assets/svgs/arrow-right-line.svg'
-import { Splide, SplideSlide } from '@splidejs/react-splide'
+import { ReactComponent as ArrowRightSLine } from '../../assets/svgs/arrow-right-s-line.svg'
+import { ReactComponent as ArrowLeftSLine } from '../../assets/svgs/arrow-left-s-line.svg'
+import { Navigation, Pagination } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
 
 export const Projects = () => {
   return (
@@ -14,15 +20,39 @@ export const Projects = () => {
     >
       <div className="container section__border">
         <div className="projects__container">
-          <Splide
-            options={{
-              width: 250
+          <Swiper
+            className="projects__swiper"
+            modules={[Navigation, Pagination]}
+            grabCursor={true}
+            spaceBetween={24}
+            slidesPerView={1}
+            navigation={{
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev'
+            }}
+            pagination={{
+              el: '.swiper-pagination',
+              clickable: true
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 24
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 24
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 24
+              }
             }}
           >
             {projects.map((project) => {
               return (
-                <SplideSlide>
-                  <div className="projects__content" key={project.key}>
+                <SwiperSlide key={project.key}>
+                  <div className="projects__content">
                     {project.image}
                     <div>
                       <span className="projects__subtitle">
@@ -38,10 +68,18 @@ export const Projects = () => {
                       </a>
                     </div>
                   </div>
-                </SplideSlide>
+                </SwiperSlide>
               )
             })}
-          </Splide>
+          </Swiper>
+          <div className="swiper-pagination"></div>
+
+          <div className="swiper-button-prev">
+            <ArrowLeftSLine />
+          </div>
+          <div className="swiper-button-next">
+            <ArrowRightSLine />
+          </div>
         </div>
       </div>
     </Section>

@@ -1,12 +1,58 @@
 .projects {
   &__container {
-    overflow: initial;
-    display: grid;
-    justify-content: center;
-
-    .splide__pagination {
-      bottom: -1rem;
+    position: relative;
+    width: 250px;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      width: 500px;
     }
+    @media screen and (min-width: 1024px) {
+      width: 750px;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      content: '';
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin: initial;
+      top: 4.5rem;
+      svg {
+        fill: var(--title-color);
+      }
+    }
+
+    .swiper-button-prev {
+      left: -2.5rem;
+    }
+
+    .swiper-button-next {
+      right: -2.5rem;
+    }
+
+    .swiper-slide {
+      margin-bottom: 4.5rem;
+    }
+
+    .swiper-pagination-bullets {
+      bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+      background-color: var(--text-color-light);
+      opacity: initial;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: var(--title-color);
+    }
+  }
+
+  &__swiper {
   }
 
   &__img {
