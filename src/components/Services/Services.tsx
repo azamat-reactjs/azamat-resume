@@ -1,12 +1,15 @@
 import './Services.scss'
 import { services } from '../constants'
+import { Section } from '../Section/Section'
 
 export const Services = () => {
   return (
-    <section className="services section" id="services">
-      <h2 className="section__title">Services</h2>
-      <span className="section__subtitle">What I offer</span>
-
+    <Section
+      classes="services"
+      id="services"
+      title="Services"
+      subtitle="What I offer"
+    >
       <div className="services__container container section__border">
         {services.map((service) => {
           return (
@@ -19,6 +22,6 @@ export const Services = () => {
           )
         })}
       </div>
-    </section>
+    </Section>
   )
 }

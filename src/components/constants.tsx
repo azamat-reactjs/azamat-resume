@@ -11,6 +11,10 @@ import { ReactComponent as InstagramLine } from '../assets/svgs/instagram-line.s
 import { ReactComponent as CodeLine } from '../assets/svgs/code-line.svg'
 import NodeJsIcon from '../assets/svgs/nodejs-icon.svg'
 import NpmIcon from '../assets/svgs/npm.svg'
+import Project1 from '../assets/images/project1.jpg'
+import Project2 from '../assets/images/project2.jpg'
+import Project3 from '../assets/images/project3.jpg'
+import Project4 from '../assets/images/project4.jpg'
 
 export const links = [
   {
@@ -188,5 +192,40 @@ export const services = [
     ),
     description:
       'Service that provides the best quality and at the request of the client, with professional work and customer support.'
+  }
+]
+
+export const projects = [
+  {
+    id: 'project1',
+    key: 'project1',
+    image: <img className="projects__img" src={Project1} alt="Project 1" />,
+    subtitle: 'Web',
+    title: 'Modern Website',
+    projectUrl: ''
+  },
+  {
+    id: 'project2',
+    key: 'project2',
+    image: <img className="projects__img" src={Project2} alt="Project 2" />,
+    subtitle: 'Web',
+    title: 'E-commerce Store',
+    projectUrl: ''
+  },
+  {
+    id: 'project3',
+    key: 'project3',
+    image: <img className="projects__img" src={Project3} alt="Project 3" />,
+    subtitle: 'Web',
+    title: 'Blog Website',
+    projectUrl: ''
+  },
+  {
+    id: 'project4',
+    key: 'project4',
+    image: <img className="projects__img" src={Project4} alt="Project 4" />,
+    subtitle: 'Web',
+    title: 'Payment System',
+    projectUrl: 'https://newmobile.uz'
   }
 ]

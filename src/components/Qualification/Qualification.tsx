@@ -3,13 +3,16 @@ import { qualificationInfos, qualificationInfos2 } from '../constants'
 import { ReactComponent as PencilRuler2Line } from '../../assets/svgs/pencil-ruler-2-line.svg'
 import { ReactComponent as BuildingLine } from '../../assets/svgs/building-line.svg'
 import { ReactComponent as ShapeCircle } from '../../assets/svgs/shape-circle.svg'
+import { Section } from '../Section/Section'
 
 export const Qualification = () => {
   return (
-    <section className="qualification section" id="qualification">
-      <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle">Experience and education</span>
-
+    <Section
+      classes="qualification"
+      id="qualification"
+      title="Qualification"
+      subtitle="Experience and education"
+    >
       <div className="qualification__container container section__border">
         <div className="qualification__content">
           <h3 className="qualification__title">
@@ -57,8 +60,7 @@ export const Qualification = () => {
           </div>
         </div>
       </div>
-
       <ShapeCircle className="qualification__shape-circle" />
-    </section>
+    </Section>
   )
 }

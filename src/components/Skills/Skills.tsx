@@ -15,6 +15,7 @@ import ChakraUIIcon from '../../assets/svgs/chakraui.svg'
 import RoutertIcon from '../../assets/svgs/react-router.svg'
 import { skills2 } from '../constants'
 import { useColorMode } from '@chakra-ui/react'
+import { Section } from '../Section/Section'
 
 export const Skills = () => {
   const { colorMode } = useColorMode()
@@ -104,10 +105,12 @@ export const Skills = () => {
   ]
 
   return (
-    <section className="skills section" id="skills">
-      <h2 className="section__title">Skills</h2>
-      <span className="section__subtitle">My favourite skills</span>
-
+    <Section
+      classes="skills"
+      id="skills"
+      title="Skills"
+      subtitle="My favourite skills"
+    >
       <div className="skills__container container section__border">
         <div className="skills__content">
           <h3 className="skills__title">
@@ -147,6 +150,6 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
