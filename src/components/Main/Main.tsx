@@ -3,6 +3,7 @@ import { Skills } from '../Skills'
 import { Qualification } from '../Qualification'
 import { Services } from '../Services'
 import { Projects } from '../Projects'
+import { Contact } from '../Contact'
 
 export const Main = () => {
   return (
@@ -12,6 +13,7 @@ export const Main = () => {
       <Qualification />
       <Services />
       <Projects />
+      <Contact />
     </main>
   )
 }
