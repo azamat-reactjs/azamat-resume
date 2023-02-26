@@ -16,12 +16,18 @@ export const Qualification = () => {
             <PencilRuler2Line /> Education
           </h3>
           <div className="qualification__info">
-            {qualificationInfos.map(qualificationInfo => {
+            {qualificationInfos.map((qualificationInfo) => {
               return (
                 <div key={qualificationInfo.key}>
-                  <h3 className="qualification__name">{qualificationInfo.name}</h3>
-                  <span className="qualification__country">{qualificationInfo.country}</span>
-                  <span className="qualification__year">{qualificationInfo.year}</span>
+                  <h3 className="qualification__name">
+                    {qualificationInfo.name}
+                  </h3>
+                  <span className="qualification__country">
+                    {qualificationInfo.country}
+                  </span>
+                  <span className="qualification__year">
+                    {qualificationInfo.year}
+                  </span>
                 </div>
               )
             })}
@@ -33,12 +39,18 @@ export const Qualification = () => {
             <BuildingLine /> Work
           </h3>
           <div className="qualification__info">
-            {qualificationInfos2.map(qualificationInfo => {
+            {qualificationInfos2.map((qualificationInfo) => {
               return (
                 <div key={qualificationInfo.key}>
-                  <h3 className="qualification__name">{qualificationInfo.name}</h3>
-                  <span className="qualification__country">{qualificationInfo.country}</span>
-                  <span className="qualification__year">{qualificationInfo.year}</span>
+                  <h3 className="qualification__name">
+                    {qualificationInfo.name}
+                  </h3>
+                  <span className="qualification__country">
+                    {qualificationInfo.country}
+                  </span>
+                  <span className="qualification__year">
+                    {qualificationInfo.year}
+                  </span>
                 </div>
               )
             })}

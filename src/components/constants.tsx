@@ -8,6 +8,7 @@ import { ReactComponent as LinkedinBoxLine } from '../assets/svgs/linkedin-box-l
 import { ReactComponent as GitHubLine } from '../assets/svgs/github-line.svg'
 import { ReactComponent as TelegramLine } from '../assets/svgs/telegram-line.svg'
 import { ReactComponent as InstagramLine } from '../assets/svgs/instagram-line.svg'
+import { ReactComponent as CodeLine } from '../assets/svgs/code-line.svg'
 import NodeJsIcon from '../assets/svgs/nodejs-icon.svg'
 import NpmIcon from '../assets/svgs/npm.svg'
 
@@ -172,5 +173,20 @@ export const qualificationInfos2 = [
     name: 'Frontend Developer',
     country: 'Davr Bank - Tashkent',
     year: '2022 - Present'
+  }
+]
+
+export const services = [
+  {
+    id: 'web-design',
+    key: 'web-design',
+    icon: <CodeLine />,
+    title: (
+      <>
+        Website <br /> Design
+      </>
+    ),
+    description:
+      'Service that provides the best quality and at the request of the client, with professional work and customer support.'
   }
 ]

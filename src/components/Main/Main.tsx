@@ -1,6 +1,8 @@
 import { Home } from '../Home'
 import { Skills } from '../Skills'
 import { Qualification } from '../Qualification'
+import { Services } from '../Services'
+import { Projects } from '../Projects'
 
 export const Main = () => {
   return (
@@ -8,6 +10,8 @@ export const Main = () => {
       <Home />
       <Skills />
       <Qualification />
+      <Services />
+      <Projects />
     </main>
   )
 }
