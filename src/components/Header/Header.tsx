@@ -34,7 +34,7 @@ export const Header = () => {
                     to={`${link.key}`}
                     spy={true}
                     smooth={true}
-                    offset={-20}
+                    offset={-100}
                     hashSpy={true}
                     href={`#${link.key}`}
                     activeClass="active"
