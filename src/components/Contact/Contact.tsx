@@ -1,4 +1,5 @@
 import './Contact.scss'
+import { ChangeEvent, FormEvent, useState } from 'react'
 import { Section } from '../Section/Section'
 import { ReactComponent as Chat3Line } from '../../assets/svgs/chat-3-line.svg'
 import { ReactComponent as ArrowRightLine } from '../../assets/svgs/arrow-right-line.svg'
@@ -6,6 +7,26 @@ import { ReactComponent as SendPlaneLine } from '../../assets/svgs/send-plane-li
 import { ReactComponent as ArrowRightUpLine } from '../../assets/svgs/arrow-right-up-line.svg'
 
 export const Contact = () => {
+  const [values, setValues] = useState({
+    user_name: '',
+    user_email: '',
+    message: ''
+  })
+
+  const handleChange = (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setValues((values) => ({
+      ...values,
+      [event.target.name]: event.target.value
+    }))
+  }
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    console.log(values)
+  }
+
   return (
     <Section
       classes="contact"
@@ -67,40 +88,52 @@ export const Contact = () => {
             <SendPlaneLine /> Write me your project
           </h3>
 
-          <form className="contact__form" id="contact-form">
+          <form
+            className="contact__form"
+            id="contact-form"
+            onSubmit={handleSubmit}
+          >
             <div className="contact__form-div">
-              <label className="contact__form-tag" htmlFor="full-name">
+              <label className="contact__form-tag" htmlFor="user_name">
                 Full Name
               </label>
               <input
                 className="contact__form-input"
-                id="full-name"
+                id="user_name"
                 placeholder="Write your full name"
                 type="text"
-                name="full-name"
+                name="user_name"
+                value={values.user_name}
+                onChange={handleChange}
               />
             </div>
+
             <div className="contact__form-div">
-              <label className="contact__form-tag" htmlFor="email">
+              <label className="contact__form-tag" htmlFor="user_email">
                 Email
               </label>
               <input
                 className="contact__form-input"
-                id="email"
+                id="user_email"
                 placeholder="Write your email"
                 type="email"
-                name="email"
+                name="user_email"
+                value={values.user_email}
+                onChange={handleChange}
               />
             </div>
+
             <div className="contact__form-div contact__form-area">
-              <label className="contact__form-tag" htmlFor="project">
+              <label className="contact__form-tag" htmlFor="message">
                 Project
               </label>
               <textarea
                 className="contact__form-input"
-                id="project"
+                id="message"
                 placeholder="Write your project"
-                name="project"
+                name="message"
+                value={values.message}
+                onChange={handleChange}
               ></textarea>
             </div>
 

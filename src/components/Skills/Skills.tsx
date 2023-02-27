@@ -52,7 +52,12 @@ export const Skills = () => {
     {
       id: 'github',
       key: 'github',
-      image: <img src={colorMode === 'light' ? GitHubLightIcon : GitHubDarktIcon} alt="GitHub" />,
+      image: (
+        <img
+          src={colorMode === 'light' ? GitHubLightIcon : GitHubDarktIcon}
+          alt="GitHub"
+        />
+      ),
       name: 'GitHub',
       level: 'Intermediate'
     },

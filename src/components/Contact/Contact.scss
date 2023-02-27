@@ -78,6 +78,7 @@
       margin-top: 2rem;
       svg {
         width: 1.5rem;
+        fill: var(--title-color);
       }
     }
   }
@@ -122,5 +123,10 @@
     }
   }
 
-
+  &__message {
+    font-size: var(--smaller-font-size);
+    position: absolute;
+    bottom: 2.8rem;
+    left: 1.5rem;
+  }
 }
