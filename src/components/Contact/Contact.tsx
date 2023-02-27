@@ -1,3 +1,4 @@
+import './Contact.scss'
 import { Section } from '../Section/Section'
 import { ReactComponent as Chat3Line } from '../../assets/svgs/chat-3-line.svg'
 import { ReactComponent as ArrowRightLine } from '../../assets/svgs/arrow-right-line.svg'
@@ -12,7 +13,7 @@ export const Contact = () => {
       title="Contact Me"
       subtitle="Get in touch"
     >
-      <div className="contact__container section__border">
+      <div className="contact__container container section__border">
         <div className="contact__content">
           <h3 className="contact__title">
             <Chat3Line /> Talk to me
@@ -21,7 +22,7 @@ export const Contact = () => {
           <div className="contact__info">
             <div className="contact__data">
               <span className="contact__data-title">Email</span>
-              <span className="contact__data-infp">
+              <span className="contact__data-info">
                 azamatreactjs@gmail.com
               </span>
 
@@ -35,7 +36,7 @@ export const Contact = () => {
 
             <div className="contact__data">
               <span className="contact__data-title">Telegram</span>
-              <span className="contact__data-infp">+998 (95) 004-40-48</span>
+              <span className="contact__data-info">+998 (95) 004-40-48</span>
 
               <a
                 className="contact__button"
@@ -48,7 +49,7 @@ export const Contact = () => {
 
             <div className="contact__data">
               <span className="contact__data-title">Instagram</span>
-              <span className="contact__data-infp">@azamat_reactjs</span>
+              <span className="contact__data-info">@azamat_reactjs</span>
 
               <a
                 className="contact__button"
@@ -67,7 +68,7 @@ export const Contact = () => {
           </h3>
 
           <form className="contact__form" id="contact-form">
-            <div className="contact-form-div">
+            <div className="contact__form-div">
               <label className="contact__form-tag" htmlFor="full-name">
                 Full Name
               </label>
@@ -79,7 +80,7 @@ export const Contact = () => {
                 name="full-name"
               />
             </div>
-            <div className="contact-form-div">
+            <div className="contact__form-div">
               <label className="contact__form-tag" htmlFor="email">
                 Email
               </label>
@@ -91,7 +92,7 @@ export const Contact = () => {
                 name="email"
               />
             </div>
-            <div className="contact-form-div contact__form-area">
+            <div className="contact__form-div contact__form-area">
               <label className="contact__form-tag" htmlFor="project">
                 Project
               </label>
