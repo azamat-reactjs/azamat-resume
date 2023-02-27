@@ -12,7 +12,8 @@ import TypescriptIcon from '../../assets/svgs/typescript.svg'
 import ReduxToolkitIcon from '../../assets/svgs/reduxtoolkit.svg'
 import AntDesignIcon from '../../assets/svgs/antdesign.svg'
 import ChakraUIIcon from '../../assets/svgs/chakraui.svg'
-import RoutertIcon from '../../assets/svgs/react-router.svg'
+import GitHubLightIcon from '../../assets/svgs/github-icon-light.svg'
+import GitHubDarktIcon from '../../assets/svgs/github-icon-dark.svg'
 import { skills2 } from '../constants'
 import { useColorMode } from '@chakra-ui/react'
 import { Section } from '../Section/Section'
@@ -49,17 +50,17 @@ export const Skills = () => {
       level: 'Intermediate'
     },
     {
+      id: 'github',
+      key: 'github',
+      image: <img src={colorMode === 'light' ? GitHubLightIcon : GitHubDarktIcon} alt="GitHub" />,
+      name: 'GitHub',
+      level: 'Intermediate'
+    },
+    {
       id: 'react',
       key: 'react',
       image: <img src={ReactIcon} alt="React.js" />,
       name: 'React',
-      level: 'Intermediate'
-    },
-    {
-      id: 'router',
-      key: 'router',
-      image: <img src={RoutertIcon} alt="React Router" />,
-      name: 'React Router',
       level: 'Intermediate'
     },
     {

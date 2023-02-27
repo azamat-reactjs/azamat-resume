@@ -16,7 +16,7 @@ export const Projects = () => {
       classes="projects"
       id="projects"
       title="Projects"
-      subtitle="Most recent works"
+      subtitle="Most recent work"
     >
       <div className="container section__border">
         <div className="projects__container">
